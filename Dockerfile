@@ -1,7 +1,7 @@
 FROM ubuntu:questing
 
-ENV PATH="/usr/local/gauche/bin:$PATH"
-ENV GAUCHE_VERSION="0.9.15"
+ENV PATH=/usr/local/gauche/bin:$PATH
+ENV GAUCHE_VERSION=0.9.15
 
 WORKDIR /root
 RUN apt update -y && apt install -y wget make build-essential libgdbm-dev zlib1g-dev texinfo
